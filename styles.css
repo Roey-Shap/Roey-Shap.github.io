@@ -1,5 +1,53 @@
 
 
+html {
+    height: 100%;
+}
+
+body {
+
+
+
+}
+
+.background_hack {
+    height: 270%;
+}
+
+.base_background {
+    background-color: #dac8b5;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: inherit;
+
+    z-index: -1;
+}
+
+.tiled_background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: inherit;
+
+    background-image: url("https://image.freepik.com/free-vector/geometric-shapes-pattern-background_1319-136.jpg");
+    opacity: 0.05;
+    background-repeat: repeat;
+
+    z-index: 0;
+}
+
+/*
+ background-image: url("https://image.freepik.com/free-vector/geometric-shapes-pattern-background_1319-136.jpg");
+    background-color: rgba(255, 255, 255, 0);
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+ */
+
+
 /*
 Regular links and text
  */
@@ -46,13 +94,11 @@ a {
     flex-direction: row;
 }
 
+.reg_grid_container {
 
-/*
-Background
- */
-.generic_background {
-    background: #dac8b5;
 }
+
+
 
 .intro_pic {
     width: 38%;
@@ -68,6 +114,8 @@ Background
     border-width: 2px;
     height: 1px;
     background-color: #6767e0;
+
+    z-index: 1;
 }
 
 
@@ -119,6 +167,9 @@ Navbar
 .navbar_link {
     max-width: 80%;
     horiz-align: center;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }
 
 .navbar_link:hover {

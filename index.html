@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Roey Shap</title>
+    <link rel="icon" href="https://drive.google.com/uc?export=view&id=1LlPjQqo-cS3CfOTMFYDiDBK0LkvpuOcT"/>
+        <!-- https://img.icons8.com/material-outlined/24/000000/oat-milk.png -->
+        <!-- https://drive.google.com/uc?export=view&id=1LSxDzICSsXmXwHYdwLP5QSDW_YtyAqNi -->
     <link rel="stylesheet" href="styles.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2:wght@600&display=swap');
     </style>
 </head>
-<body class="generic_background">
+<body>
+<div class="background_hack">
+    <div class="base_background"></div>
+    <div class="tiled_background"></div>
+</div>
 
 <div class="navbar navbar_container">
     <div style="max-width: 10%">
         <a href="#" class="navbar_home">Home</a>
     </div>
     <div class="navbar_link_container">
-        <p style="margin: 0; padding: 10px; text-align: center"><a class="reg_link navbar_link" href="#education_and_programs">Education and Programs</a></p>
-        <p style="margin: 0; padding: 10px; text-align: center"><a class="reg_link navbar_link" href="#development_skills">Development Skills</a></p>
-        <p style="margin: 0; padding: 10px; text-align: center"><a class="reg_link navbar_link" href="#work_experience">Work Experience</a></p>
-        <p style="margin: 0; padding: 10px; text-align: center"><a class="reg_link navbar_link" href="#personal_projects">Personal Projects</a></p>
-        <p style="margin: 0; padding: 10px; text-align: center"><a class="reg_link navbar_link" href="#hobbies">Hobbies</a></p>
-        <p style="margin: 0; padding: 35px; text-align: center"><a class="reg_link navbar_link" href="#contact">Contact</a></p>
+        <p><a class="reg_link navbar_link" href="#education_and_programs">Education and Programs</a></p>
+        <p><a class="reg_link navbar_link" href="#development_skills">Development Skills</a></p>
+        <p><a class="reg_link navbar_link" href="#work_experience">Work Experience</a></p>
+        <p><a class="reg_link navbar_link" href="#personal_projects">Personal Projects</a></p>
+        <p><a class="reg_link navbar_link" href="#hobbies">Hobbies</a></p>
+        <p style="padding: 40px;"><a class="reg_link navbar_link" href="#contact">Contact</a></p>
     </div>
 
 </div>
 
-<div class="reg_text">
+<div class="reg_text" style="z-index: 1">
 
 <br>
 <br>
@@ -59,18 +66,21 @@
     </ul>
 
     <br>
-<h2 id="development_skills">Development Skills</h2>
-    <ul class="reg_ul_list"> Experienced
-        <li>Java</li>
-        <li>Python</li>
-        <li>GML</li>
-    </ul>
-    <ul class="reg_ul_list"> Intermediate
-        <li>JS, HTML, CSS (have worked with NodeJS/Express, React)</li>
-        <li>C</li>
-        <li>Bash scripting</li>
-        <li>GLSL</li>
-    </ul>
+
+<div style="margin-left: 40%;">
+    <h2 id="development_skills">Development Skills</h2>
+        <ul class="reg_ul_list"> Experienced
+            <li>Java</li>
+            <li>Python</li>
+            <li>GML</li>
+        </ul>
+        <ul class="reg_ul_list"> Intermediate
+            <li>JS, HTML, CSS (have worked with NodeJS/Express, React)</li>
+            <li>C</li>
+            <li>Bash scripting</li>
+            <li>GLSL</li>
+        </ul>
+</div>
 
     <br>
 <h2 id="work_experience">Work Experience</h2>
@@ -114,8 +124,6 @@
 
 </div>
 <!-- Main body ends -->
-
-
 
 </body>
 </html>
