@@ -1,0 +1,82 @@
+/*
+Navbar
+ */
+.navbar {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+    background: #6767e0;
+    width: 100%;
+    height: 4.75rem;
+
+    z-index: 100;
+}
+
+
+.navbar_home, .navbar_home.visited {
+    position: relative;
+    left: 1rem;
+    font-size: 300%;
+    font-family: 'Baloo 2';
+    color: white;
+    transition: all .15s ease-in-out;
+    display: inline-block;
+}
+
+.navbar_home:hover {
+    transform: scale(1.02) translate(-0.1rem, -0.1rem);
+    text-shadow: 0.25rem 0.25rem black;
+}
+
+.navbar_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navbar_link_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navbar_link {
+    max-width: 80%;
+    horiz-align: center;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar_link:hover {
+    transform: scale(1.02) translate(-0.05rem, -0.05rem);
+    text-shadow: 0.1rem 0.1rem black;
+}
+
+
+/*
+Footer
+ */
+
+.reg_footer {
+    transform: translate(-8px);
+    bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 4px;
+    width: 110%;
+
+    background: #444460;
+    color: white;
+}
+
+.reg_footer_contents {
+    padding-left: 1%;
+}
+
+
+
+
