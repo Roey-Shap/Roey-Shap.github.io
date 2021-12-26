@@ -28,6 +28,8 @@ Increase line spacing on lists
         @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2:wght@600&display=swap');
     </style>
 
+
+
     <script src="navbar.js" type="text/javascript" defer></script>
     <script src="footer.js" type="text/javascript" defer></script>
     <script src="external_functions.js" type="text/javascript"></script>
@@ -46,47 +48,38 @@ Increase line spacing on lists
     <br><br><br>
     <br><br><br>
 
-    <div class="reg_container">
-        <h1 style="margin: 5%;" id="about_me">About Me</h1>
-        <img class="intro_pic" src="./images/self-picture.jfif"; alt="My face">
-    </div>
-    <p class="intro_text">
-        Hi! I'm Roey Shapiro, a 2nd year Computer Science student at the IDC!
-        I enjoy making games, drawing, writing, and everything Japanese.
-        Hoping to be in a team of solid people one day.
-        <br><br>
-        Welcome to my website! Grab your beverage of choice and have a look around.
-        <img src="https://www.nicepng.com/png/full/66-668329_vector-cafe-travel-mug-cup-icon.png" alt=""
-            style="display: inline-block; height: 2.5rem; padding-left: 1%;">
-    </p>
-    <br>
     <hr class="page_line_sep">
     <br>
 
-    <div style="display:flex; justify-content: center">
-        <div class="main_page_grid_container">
-            <div class="main_page_grid_item">
-                <a href="game_dev.html" class="main_page_grid_text">
-                    <p>Game Development</p>
-                </a>
-            </div>
+    <div style="display: flex; justify-content: center; padding-top: 1%">
+        <div class="email_form" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Email me</h1>
 
-            <div class="main_page_grid_item">
-                <a href="resume.html" class="main_page_grid_text">
-                    <p>Resume</p>
-                </a>
-            </div>
+                <label for="email">Email</label>
+                <div>
+                    <input type="text" placeholder="Email address" name="email" required>
+                </div>
 
-            <div class="main_page_grid_item">
-                <a href="writing.html" class="main_page_grid_text">
-                    <p>Writing</p>
-                </a>
-            </div>
+                <label for="subject">Subject</label>
+                <div>
+                    <input type="text" placeholder="Subject" name="subject" required>
+                </div>
+
+                <label for="content">Content</label>
+                <div>
+                    <textarea name="Content" id="" cols="80" rows="10"></textarea>
+                </div>
+
+
+                <button type="submit" class="btn" style="max-width: 50%;">Login</button>
+            </form>
         </div>
     </div>
 
+    </div>
+
     <footer-comp></footer-comp>
-</div>
 
     <!-- Main body ends -->
 

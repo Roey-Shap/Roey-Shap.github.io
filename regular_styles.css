@@ -1,12 +1,15 @@
 
 
+
+
+
 html {
     height: 100%;
 }
 
 .background_hack {
     width: 100%;
-    height: 220%;
+    height: 100%;
 }
 
 .base_background {
@@ -28,12 +31,22 @@ html {
     width: 100%;
     height: inherit;
 
-    background-image: url("https://image.freepik.com/free-vector/geometric-shapes-pattern-background_1319-136.jpg");
-    opacity: 0.015;
-    background-repeat: repeat;
+    background-image: url("https://image.freepik.com/free-vector/abstract-cube-pattern_1319-153.jpg ");
+    /*
+
+    https://image.freepik.com/free-vector/minimal-triangle-pattern-design-pastel-colors_1017-14885.jpg
+    https://image.freepik.com/free-vector/geometric-shapes-pattern-background_1319-136.jpg
+
+    https://image.freepik.com/free-vector/abstract-pattern_1319-108.jpg
+     */
+    opacity: 0.06;
+    background-repeat: repeat round;
+/*    background-attachment: fixed;    */
 
     z-index: -1;
 }
+
+
 
 /*
 Regular links and text
@@ -42,7 +55,6 @@ Regular links and text
 a {
     text-decoration: none;
 }
-
 
 .reg_link, .reg_link.visited {
     color: white;
@@ -79,6 +91,17 @@ a {
     padding-left: 8%;
 }
 
+
+/* Such a nifty condition, this last-child thing */
+li.reg_sub_list_item:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+
+/*
+Containers
+ */
+
 .main_container {
     z-index: 100;
 }
@@ -109,6 +132,10 @@ a {
     offset-position: top;
 }
 
+
+/* Deprecated - I used this when I had buttons jumping to the page but the header was getting in the way, so this offset
+everything to that it jumped a bit further down but elements kept decently similar positioning to before
+ */
 .offset_anchor {
     padding-top: 120px;
     margin-top: -80px;
@@ -121,7 +148,7 @@ a {
     height: 38%;
     border-radius: 50%;
     position: relative;
-    left: -17%;
+    left: -13%;
 }
 
 .page_line_sep {
@@ -135,21 +162,46 @@ a {
 }
 
 
-/*
-Navbar
- */
-.navbar {
-    position: fixed;
-    left: 0px;
-    top: 0px;
 
-    background: #6767e0;
-    width: 100%;
-    height: 4.75rem;
+/* Main Page */
 
-    z-index: 100;
+.main_page_grid_container {
+
+    display: inline-grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Two columns */
+    grid-template-rows: 1fr /* 1fr */;
+    /* Two rows */
+
+    row-gap: 4%;
 }
 
+.main_page_grid_item {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+
+    min-width: 50%;
+    /*
+    border-radius: 10px;
+    background-color: rgba(50, 50, 50, 0.1);
+    */
+
+    font-size: 200%;
+}
+
+.main_page_grid_text, .main_page_grid_text.visited {
+    color: #000000;
+    transition: all .1s ease-in-out;
+}
+
+.main_page_grid_text:hover {
+    color: white;
+    transform: scale(1.03) translate(-0.1rem, -0.1rem);
+    text-shadow: 0.1rem 0.1rem rgba(20, 20, 20, 0.8);
+
+}
 
 /*
 External sources
@@ -165,3 +217,119 @@ External sources
 }
 
 
+/* width */
+::-webkit-scrollbar {
+    width: 25px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    visibility: hidden;
+}
+
+/* Backpart */
+::-webkit-scrollbar-track-piece {
+    background-color: #444460;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6767e0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4949b2;
+}
+
+
+
+{box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup form - hidden by default */
+.email_form {
+    display: inline-block;
+    position: relative;
+
+    width: auto;
+    margin: auto;
+
+    text-align: center;
+
+
+    z-index: 10;
+}
+
+/* Add styles to the form container */
+.form-container {
+
+    padding: 10px;
+    background-color: white;
+
+    border-radius: 5px;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text]  {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.textarea {
+    border: 1px solid #ccc;
+    padding: 1px 6px;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    resize: vertical;
+    min-height: 40px;
+    line-height: 20px;
+}
+
+.textarea[contenteditable]:empty::before {
+    content: "Placeholder still possible";
+    color: gray;
+    box-sizing: border-box;
+}
+
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}

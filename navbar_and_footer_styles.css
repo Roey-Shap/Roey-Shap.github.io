@@ -17,7 +17,7 @@ Navbar
 .navbar_home, .navbar_home.visited {
     position: relative;
     left: 1rem;
-    font-size: 300%;
+    font-size: 350%;
     font-family: 'Baloo 2';
     color: white;
     transition: all .15s ease-in-out;
@@ -47,8 +47,9 @@ Navbar
     max-width: 80%;
     horiz-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 30px;
     text-align: center;
+    font-size: 150%;
 }
 
 .navbar_link:hover {
@@ -62,21 +63,69 @@ Footer
  */
 
 .reg_footer {
-    transform: translate(-8px);
-    bottom: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 4px;
-    width: 110%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+
+    padding-top: 0.6rem;
+    padding-bottom: 0.3rem;
+    width: 100%;
 
     background: #444460;
     color: white;
+
 }
 
 .reg_footer_contents {
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.footer_link {
     padding-left: 1%;
+    padding-right: 1%;
 }
 
 
 
+.tooltip {
+    position: relative;
+    display: inline-block;
 
+    font-family: "Baloo 2";
+    font-size: 110%;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,2 +1,4 @@
 # roey-shap.github.io
-Website test
+
+Simply double-clicking the index.html file should work fine.
+The website is also hosted at roey-shap.github.io, though :)
