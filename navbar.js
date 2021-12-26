@@ -34,16 +34,17 @@ class Navbar extends HTMLElement {
                 <p><a class="reg_link navbar_link" href="game_dev.html">Game Dev</a></p>
                 <p><a class="reg_link navbar_link" href="resume.html">Resume</a></p>
                 <p><a class="reg_link navbar_link" href="writing.html">Writing</a></p>
-                <p><form action="contact.html" class="dropdown">
+                <p><a class="reg_link navbar_link" href="contact.html" class="reg_link">
+                        Contact
+                    </a>
+                        <!--<form action="contact.html" class="dropdown">
                     <button type="submit" value="" class="dropbtn">
-                        <a href="contact.html" class="reg_link">
-                            Contact
-                        </a>
+                        
                         <div class="dropdown-content">
                             <a class="navbar_link" href="#">Link 1</a>
                             <a class="navbar_link" href="#">Link 2</a>
                             <a class="navbar_link" href="#">Link 3</a>
-                        </div>
+                        </div>-->
                     </input>                                 
                 </form></p>
                 <!--

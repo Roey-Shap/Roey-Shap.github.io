@@ -166,6 +166,17 @@ everything to that it jumped a bit further down but elements kept decently simil
     z-index: 100;
 }
 
+.small_gif {
+    padding: 0vh;
+
+    border-style: dotted;
+    border-width: 0.3vh;
+    border-radius: 20px;
+}
+
+.transparent_bg {
+    background-color: rgba(255, 255, 255, 0.8);
+}
 
 
 /* Main Page */
@@ -303,22 +314,6 @@ External sources
 
 
 
-{box-sizing: border-box;}
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
-}
-
 /* The popup form - hidden by default */
 .email_form {
     display: inline-block;
@@ -339,7 +334,7 @@ External sources
     padding: 10px;
     background-color: white;
 
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 
@@ -378,13 +373,13 @@ External sources
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-    background-color: #04AA6D;
+    background-color: #6767e0;
     color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     opacity: 0.8;
 }
 

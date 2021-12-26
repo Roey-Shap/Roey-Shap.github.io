@@ -74,17 +74,21 @@ Footer
     background: #444460;
     color: white;
 
+    z-index: 100;
 }
 
 .reg_footer_contents {
     display: flex;
     align-content: space-around;
     justify-content: center;
+    align-items: center;
 }
 
 .footer_link {
     padding-left: 1%;
     padding-right: 1%;
+    justify-self: center;
+    align-self: center;
 }
 
 

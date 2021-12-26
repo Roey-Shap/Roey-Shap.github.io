@@ -1,7 +1,21 @@
 
 
 function validateEmailInput() {
-    //@TODO:
+    let checks = [
+        'subject',
+        'content'
+    ];
+    for (let i = 0; i < checks.length; i++) {
+        let c = checks[i];
+        let t = document.getElementById(c).value;
+        if (t == "") {
+            alert("Please fill out the " + c + " field.");
+            return;
+        }
+        checks[i] = t;
+    }
+    // All fields are filled with something:
+    window.open('mailto:roeyshapiro15@gmail.com?subject=' + checks[0] + '&body=' + checks[1]);
 }
 
 

@@ -13,7 +13,7 @@ Email form:
 <head>
     <meta charset="UTF-8">
     <title>Roey Shap</title>
-    <link rel="icon" href="./images/tab-icon.png">
+    <link rel="icon" href="./images/tab-icon2.png">
         <!-- https://img.icons8.com/material-outlined/24/000000/oat-milk.png -->
         <!-- https://drive.google.com/uc?export=view&id=1LSxDzICSsXmXwHYdwLP5QSDW_YtyAqNi -->
     <link rel="stylesheet" href="regular_styles.css">
@@ -44,31 +44,28 @@ Email form:
     <br><br><br>
     <br><br><br>
 
-    <hr class="page_line_sep">
-    <br>
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly">
+        <p style="font-size: 150%; margin: 1%;">TEL: +972 050 7888 000</p>
+    </div>
 
     <div style="display: flex; justify-content: center; padding-top: 1%">
         <div class="email_form" id="myForm">
-            <form action="/action_page.php" class="form-container">
+            <form class="form-container">
                 <h1>Email me</h1>
-
-                <label for="email">Email</label>
-                <div>
-                    <input type="text" placeholder="Email address" id="email" required>
-                </div>
 
                 <label for="subject">Subject</label>
                 <div>
-                    <input type="text" placeholder="Subject" id="subject" required>
+                    <input style="border-radius: 10px;" type="text" placeholder="Subject" id="subject">
                 </div>
 
                 <label for="content">Content</label>
                 <div>
-                    <textarea name="Content" id="content" cols="80" rows="10"></textarea>
+                    <textarea style="border-radius: 10px;" name="Content" id="content" cols="80" rows="15"></textarea>
                 </div>
 
 
-                <button type="submit" class="btn" style="max-width: 50%;">Login</button>
+                <button type="submit" class="btn" style="max-width: 50%; border-radius: 10px;"
+                        onclick="validateEmailInput()">Send Email</button>
             </form>
         </div>
     </div>

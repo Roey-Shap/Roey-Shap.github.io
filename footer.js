@@ -11,8 +11,8 @@ class Footer extends HTMLElement {
          <div id="footer" class="reg_footer">
             <div class="reg_footer_contents">                 
                  <div class="tooltip">
-                    <input class="reg_link" type="image" onclick="copyToClipboard('roeyshapiro15@gmail.com', 'tooltiptextEmail')" o
-                        nmousein="hoveringOverCopy()" 
+                    <input class="reg_link" type="image" onclick="copyToClipboard('roeyshapiro15@gmail.com', 'tooltiptextEmail')" 
+                        onmousein="hoveringOverCopy()" 
                         src="https://www.pinclipart.com/picdir/big/537-5373668_triangle-area-symbol-png-clipart-email-icon-png.png" 
                         alt="" 
                         style="height: 2.2rem;">
@@ -32,7 +32,7 @@ class Footer extends HTMLElement {
                 </a></div>
                 
                  <a class="reg_link footer_link" target="_blank"; rel="noopener noreferrer" href="https://www.youtube.com/channel/UCuC1wO6LqpdD7p_opPHgkpA" >
-                    <img src="https://www.pinclipart.com/picdir/big/532-5329276_play-icon-white-youtube-logo-png-clipart.png" alt="" style="height: 2.2rem">
+                    <img src="https://www.pinclipart.com/picdir/big/532-5329276_play-icon-white-youtube-logo-png-clipart.png" alt="" style="height: 2.2rem; margin-right: -1rem;">
                 </a>
                 
                 <a class="reg_link footer_link" target="_blank"; rel="noopener noreferrer" href="https://twitter.com/EonLongNap">
