@@ -1,3 +1,10 @@
+
+/*
+Find how to jump straight to section of page from different page
+add sublist to Game Development,
+    remove sublist from Contact
+*/
+
 class Navbar extends HTMLElement {
     constructor() {
         super();
@@ -5,7 +12,20 @@ class Navbar extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-              
+        <!--
+        Why doesn't any of this ever work >.<
+        
+        <script id="reloader_scaler" defer>
+            // to ensure that nothing gets screwed up... by default 
+            // https://stackoverflow.com/questions/21093570/force-page-zoom-at-100-with-js
+            // document.body.style.zoom = 1.0;
+            let scale = 'scale(1)';
+            document.body.style.zoom = (window.innerWidth / window.outerWidth);
+            document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+            document.body.style.msTransform =   scale;       // IE 9
+            document.body.style.transform = scale;           // General
+        </script>
+        -->
         <div class="navbar navbar_container">
             <div style="max-width: 10%">
                 <a href="index.html" class="navbar_home">Home</a>

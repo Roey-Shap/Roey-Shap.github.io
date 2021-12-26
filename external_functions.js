@@ -1,16 +1,15 @@
 
 
 function validateEmailInput() {
-
+    //@TODO:
 }
 
 
 
-function copyDiscordName() {
-    let copyString = 'Shap#4869';
+function copyToClipboard(copyString, checkID) {
     navigator.clipboard.writeText(copyString);
 
-    let tooltip = document.getElementById("tooltiptext");
+    let tooltip = document.getElementById(checkID);
     tooltip.innerHTML = "Copied!";
 
     /* Wanted to open the window, too, but I guess not. Seems like a bigger issue...
@@ -27,6 +26,8 @@ function hoveringOverCopy() {
     tooltip.innerHTML = "Copy to clipboard";
 }
 
+
+
 /*
 Requires asking user permission for what's ultimately a silly feature. Whatever
 
@@ -39,5 +40,7 @@ function checkDefaultText() {
 }
 
  */
+
+
 
 

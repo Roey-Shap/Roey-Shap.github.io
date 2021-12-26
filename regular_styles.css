@@ -1,10 +1,15 @@
 
 
 
-
-
 html {
     height: 100%;
+}
+
+::selection {
+    /* Change highlight background color to black */
+    background: #41419b;
+    /* Change highlight text color to red */
+    color: #e8e8f6;
 }
 
 .background_hack {
@@ -119,7 +124,7 @@ Containers
 
     grid-template-columns: 1fr 1fr 1fr;
     /* Three columns */
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.75fr 0.75fr;
     /* Two rows */
 
     grid-gap: 3%;
@@ -208,12 +213,66 @@ External sources
  */
 .itch_page_embed {
     border-radius: 4px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .itch_games_ul_list {
     list-style-type: none;
     padding-left: 0rem;
     line-height: 1.5rem;
+}
+
+.itch_thumb_custom {
+    width: 30vh;
+    height: fit-content;
+    padding: 3vh;
+    background-color: rgba(156, 156, 255, 0.74);
+
+    border-style: dotted;
+    border-width: 0.3vh;
+    border-color: black;
+    border-radius: 1vh;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+.itch_thumb_custom_pic {
+    height: 25vh;
+    border-style: solid;
+    border-width: 0.2vh;
+    border-color: black;
+    border-radius: 2vh;
+}
+
+.itch_thumb_custom_desc {
+    margin-top: 1vh;
+    margin-bottom: -2vh;
+    height: 10vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    word-wrap: break-word;
+
+    text-align: center;
+
+    font-size: 2.5vh;
+}
+
+.itch_thumb_custom_title {
+    margin-top: -0.5vh;
+    margin-bottom: 1vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    word-wrap: break-word;
+
+    text-align: center;
+
+    font-size: 3.5vh;
 }
 
 
