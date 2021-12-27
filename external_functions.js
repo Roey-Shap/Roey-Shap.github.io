@@ -40,8 +40,6 @@ function hoveringOverCopy() {
     tooltip.innerHTML = "Copy to clipboard";
 }
 
-
-
 /*
 Requires asking user permission for what's ultimately a silly feature. Whatever
 

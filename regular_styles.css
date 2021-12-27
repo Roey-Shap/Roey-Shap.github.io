@@ -151,9 +151,12 @@ everything to that it jumped a bit further down but elements kept decently simil
 .intro_pic {
     width: 38%;
     height: 38%;
-    border-radius: 50%;
+
     position: relative;
     left: -13%;
+
+
+    border-radius: 50%;
 }
 
 .page_line_sep {
@@ -175,7 +178,7 @@ everything to that it jumped a bit further down but elements kept decently simil
 }
 
 .transparent_bg {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(204, 204, 204, 0.65);
 }
 
 
