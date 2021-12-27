@@ -12,7 +12,6 @@ Other JavaScript usage:
 <br>-Making convenient pre-built components (see navbar/footer.js)
 <br>
 <br>I wanted to do even more complex stuff like having custom attributes that could be filled in 
-(like src, desc for my custom Itch page inserts), but whatever, iteration
-and a bit of messiness is fine.
+(like src, desc for my custom Itch page inserts), but for the sake of iteration.
 <br>
 <br>-Copying to clipboard
