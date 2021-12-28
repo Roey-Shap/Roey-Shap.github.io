@@ -20,6 +20,7 @@ html {
 .base_background {
     background-color: #dac8b5;
 
+
     position: absolute;
     left: 0;
     top: 0;
@@ -79,8 +80,13 @@ a {
     line-height: 1rem;
 }
 
+.title_text {
+    margin: 5%;
+    line-height: 2rem
+}
+
 .intro_text {
-    line-height: 110%;
+    line-height: 1.5rem;
     max-width: 60%;
     padding-left: 2%;
     font-size: 115%;
@@ -153,8 +159,6 @@ everything to that it jumped a bit further down but elements kept decently simil
     height: 38%;
 
     position: relative;
-    left: -13%;
-
 
     border-radius: 50%;
 }
@@ -175,6 +179,8 @@ everything to that it jumped a bit further down but elements kept decently simil
     border-style: dotted;
     border-width: 0.3vh;
     border-radius: 20px;
+
+    flex-shrink: 0.3;
 }
 
 .transparent_bg {
@@ -241,10 +247,12 @@ External sources
     width: 30vh;
     height: fit-content;
     padding: 3vh;
-    background-color: rgba(156, 156, 255, 0.74);
+    background-color: rgba(241, 214, 179, 0.18);
 
+    /*
     border-style: dotted;
     border-width: 0.3vh;
+     */
     border-color: black;
     border-radius: 1vh;
 
@@ -271,6 +279,8 @@ External sources
     width: fit-content;
     width: -moz-fit-content;
     word-wrap: break-word;
+
+    line-height: 1rem;
 
     text-align: center;
 
@@ -323,6 +333,7 @@ External sources
     position: relative;
 
     width: auto;
+    height: 75vh;
     margin: auto;
 
     text-align: center;
