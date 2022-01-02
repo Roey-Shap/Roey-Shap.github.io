@@ -3,7 +3,37 @@
 
 html {
     height: 100%;
+
+    background-color: rgba(218,200,181,1);
+
 }
+
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+body::after {
+
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background: url('./images/cube_BG.png');
+    opacity: 0.1;
+    z-index: -1;
+
+}
+
+ */
+
 
 ::selection {
     /* Change highlight background color to black */
@@ -11,6 +41,20 @@ html {
     /* Change highlight text color to red */
     color: #e8e8f6;
 }
+
+.basic_BG {
+    height: 100%;
+    min-height: 100%;
+
+
+
+    overflow:hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 
 .background_hack {
     width: 100%;
@@ -31,13 +75,15 @@ html {
 }
 
 .tiled_background {
+
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: inherit;
+    max-height: inherit;
 
-    background-image: url("https://image.freepik.com/free-vector/abstract-cube-pattern_1319-153.jpg ");
+    background-image: url("https://image.freepik.com/free-vector/abstract-cube-pattern_1319-153.jpg");
     /*
 
     https://image.freepik.com/free-vector/minimal-triangle-pattern-design-pastel-colors_1017-14885.jpg
@@ -45,11 +91,17 @@ html {
 
     https://image.freepik.com/free-vector/abstract-pattern_1319-108.jpg
      */
+
     opacity: 0.06;
     background-repeat: repeat round;
+
+
 /*    background-attachment: fixed;    */
 
+
     z-index: -1;
+
+
 }
 
 
@@ -176,9 +228,11 @@ everything to that it jumped a bit further down but elements kept decently simil
 .small_gif {
     padding: 0vh;
 
-    border-style: dotted;
+    border-style: solid;
     border-width: 0.3vh;
     border-radius: 20px;
+
+    margin: 1vh;
 
     flex-shrink: 0.3;
 }
@@ -219,6 +273,8 @@ everything to that it jumped a bit further down but elements kept decently simil
 .main_page_grid_text, .main_page_grid_text.visited {
     color: #000000;
     transition: all .1s ease-in-out;
+
+    line-height: 2rem;
 }
 
 .main_page_grid_text:hover {
@@ -247,7 +303,7 @@ External sources
     width: 30vh;
     height: fit-content;
     padding: 3vh;
-    background-color: rgba(241, 214, 179, 0.18);
+    margin: 3vh;
 
     /*
     border-style: dotted;
@@ -260,14 +316,18 @@ External sources
     flex-direction: column;
     align-items: center;
 
-    overflow: hidden;
+    /*
+        background-color: rgba(241, 214, 179, 0.18);
 
+    overflow: hidden;
+     */
 }
 
 .itch_thumb_custom_pic {
     height: 25vh;
+
     border-style: solid;
-    border-width: 0.2vh;
+    border-width: 0.3vh;
     border-color: black;
     border-radius: 2vh;
 }
@@ -280,7 +340,7 @@ External sources
     width: -moz-fit-content;
     word-wrap: break-word;
 
-    line-height: 1rem;
+    line-height: 1.5rem;
 
     text-align: center;
 

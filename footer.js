@@ -7,7 +7,8 @@ class Footer extends HTMLElement {
         this.innerHTML = `
          
 
-         
+
+                 
          <div id="footer" class="reg_footer">
             <div class="reg_footer_contents">                 
                  <div class="tooltip">
