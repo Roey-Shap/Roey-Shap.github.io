@@ -4,8 +4,17 @@
 html {
     height: 100%;
 
-    background-color: rgba(218,200,181,1);
 
+    background-color: #dac1a6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23a78259' fill-opacity='0.17'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    background-size: 8%;
+    /*
+    Triangles
+    background-color: #dac1a6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%238d4800' fill-opacity='0.05'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 2%;
+     */
 }
 
 
@@ -180,9 +189,9 @@ Containers
 .reg_grid_container {
     display: grid;
 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     /* Three columns */
-    grid-template-rows: 0.75fr 0.75fr;
+    grid-template-rows: 0.75fr 0.75fr 0.75fr;
     /* Two rows */
 
     grid-gap: 3%;
@@ -289,8 +298,10 @@ External sources
  */
 .itch_page_embed {
     border-radius: 4px;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: -1%;
+    margin-bottom: -1%;
+    padding: 0px;
+    transform: scale(0.8);
 }
 
 .itch_games_ul_list {
@@ -323,6 +334,18 @@ External sources
      */
 }
 
+/*
+.itch_thumb_custom_hoverables {
+    transition: all 0.1s ease-in-out;
+}
+
+.itch_thumb_custom_hoverables:hover {
+    transform: scale(1.01);
+}
+
+ */
+
+
 .itch_thumb_custom_pic {
     height: 25vh;
 
@@ -331,6 +354,7 @@ External sources
     border-color: black;
     border-radius: 2vh;
 }
+
 
 .itch_thumb_custom_desc {
     margin-top: 1vh;
@@ -349,16 +373,31 @@ External sources
 
 .itch_thumb_custom_title {
     margin-top: -0.5vh;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
     width: fit-content;
     width: -moz-fit-content;
     word-wrap: break-word;
 
     text-align: center;
 
-    font-size: 3.5vh;
+    font-size: 4vh;
 }
 
+
+.resume_items_container {
+    max-width: 70%;
+    min-width: 60%;
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-flow: wrap;
+}
+
+.reg_resume_item {
+    padding: 1%;
+}
 
 /* width */
 ::-webkit-scrollbar {
