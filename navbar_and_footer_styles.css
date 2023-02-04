@@ -1,3 +1,22 @@
+
+/*
+changing based on width for responsiveness
+
+
+    nav select { display: inline-block; }
+ */
+@media (max-width: 800px) {
+    .navbar_regular_links {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .dropdown {
+        display: none;
+    }
+}
+
 /*
 Navbar
  */
@@ -36,11 +55,13 @@ Navbar
     flex-direction: row;
 }
 
-.navbar_link_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+@media (min-width: 800px) {
+    .navbar_link_container, .navbar_regular_links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
 
 .navbar_link {
@@ -55,6 +76,47 @@ Navbar
 .navbar_link:hover {
     transform: scale(1.02) translate(-0.05rem, -0.05rem);
     text-shadow: 0.1rem 0.1rem black;
+}
+
+.drop_button {
+    font-family: 'Baloo 2';
+    font-size: 1.75rem;
+    margin: 0 auto;
+
+    background-color: #6767e0;
+    color: white;
+    padding: 16px;
+    padding-top: 32px;
+
+    border: none;
+    right: 0;
+
+    cursor: pointer;
+    height: 6rem;
+}
+
+
+/*
+dropdown
+*/
+
+.drop_button:hover {
+    background-color: #5757d0;
+}
+
+@media (max-width: 800px) {
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    float: right;
+    background-color: #6767e0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 
