@@ -1,0 +1,82 @@
+<!--
+@TODO
+
+
+Reactive animation/interaction game/algorithm?
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Roey Shap</title>
+    <link rel="icon" href="./images/tab-icon2.png">
+        <!-- https://img.icons8.com/material-outlined/24/000000/oat-milk.png -->
+        <!-- https://drive.google.com/uc?export=view&id=1LSxDzICSsXmXwHYdwLP5QSDW_YtyAqNi -->
+    <link rel="stylesheet" href="regular_styles.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="navbar_and_footer_styles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2:wght@600&display=swap');
+    </style>
+
+    <script src="navbar.js" type="text/javascript" defer></script>
+    <script src="footer.js" type="text/javascript" defer></script>
+    <script src="external_functions.js" type="text/javascript"></script>
+</head>
+<body>
+<navbar-comp></navbar-comp>
+
+<!--
+<div class="background_hack">
+    <div class="base_background"></div>
+    <div class="tiled_background"></div>
+</div> -->
+
+
+<div class="reg_text main_container">
+
+    <br><br><br>
+    <br><br><br>
+
+    <div class="reg_container" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
+        <h1 class="title_text" id="about_me">Programming</h1>
+    </div>
+    <div style="display: flex; flex-direction: row; justify-content: center; text-align: center">
+        <p class="intro_text">
+            I have an interest in machine learning and graphics.
+            <br>
+            Somehow, though, I don't think pushing machine learning to its limits is the healthy way forward.
+            I'd like to make tools that leave space for us to create.
+        </p>
+    </div>
+    <hr class="page_line_sep">
+
+    <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; flex: 1;">
+        <div class="itch_thumb_custom">
+            <a href="https://github.com/Roey-Shap/" target="_blank"; rel="noopener noreferrer" class="itch_thumb_custom_title reg_link" style="color: black; text-decoration: underline"><strong>Github</strong></a>
+            <a href="https://github.com/Roey-Shap/" target="_blank"; rel="noopener noreferrer" ><img class="itch_thumb_custom_pic" src="https://avatars.githubusercontent.com/u/81587668?v=4" alt="Github image"></a>
+        </div>
+
+        <div class="itch_thumb_custom">
+            <a href="https://github.com/Roey-Shap/FontLerp" target="_blank"; rel="noopener noreferrer" class="itch_thumb_custom_title reg_link" style="color: black; text-decoration: underline"><strong>FontLerp</strong></a>
+            <a href="https://github.com/Roey-Shap/FontLerp" target="_blank"; rel="noopener noreferrer" ><img class="itch_thumb_custom_pic" src="https://user-images.githubusercontent.com/81587668/187081767-e8549ea3-c2df-4b4c-9eb4-979e2f45f68e.gif" alt="FontLerp image"></a>
+            <div class="itch_thumb_custom_desc">Interpolate between any two fonts.</div>
+        </div>
+
+        <div class="main_page_grid_container">
+
+        </div>
+    </div>
+    <br><br>
+
+    <footer-comp></footer-comp>
+</div>
+
+    <!-- Main body ends -->
+
+</body>
+</html>

@@ -9,11 +9,19 @@ changing based on width for responsiveness
     .navbar_regular_links {
         display: none;
     }
+
+    .navbar_home, .navbar_home.visited {
+        font-size: 175%;
+    }
 }
 
 @media (min-width: 800px) {
     .dropdown {
         display: none;
+    }
+
+    .navbar_home, .navbar_home.visited {
+        font-size: 275%;
     }
 }
 
@@ -36,7 +44,6 @@ Navbar
 .navbar_home, .navbar_home.visited {
     position: relative;
     left: 1rem;
-    font-size: 350%;
     font-family: 'Baloo 2';
     color: white;
     transition: all .15s ease-in-out;
@@ -141,7 +148,7 @@ Footer
 
 .reg_footer_contents {
     display: flex;
-    align-content: space-around;
+    align-content: space-evenly;
     justify-content: center;
     align-items: center;
 }

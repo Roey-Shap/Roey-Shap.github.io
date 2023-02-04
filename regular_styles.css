@@ -145,7 +145,7 @@ a {
 }
 
 .title_text {
-    margin: 3%;
+    margin: 2%;
     line-height: 2rem
 }
 
@@ -224,8 +224,8 @@ everything to that it jumped a bit further down but elements kept decently simil
     width: 10%;
     height: 10%;
 
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 175px;
+    min-height: 175px;
 
     position: relative;
 
@@ -264,7 +264,7 @@ everything to that it jumped a bit further down but elements kept decently simil
 }
 
 .transparent_bg {
-    background-color: rgba(204, 204, 204, 0.65);
+    background-color: rgba(130, 174, 255, 0.59);
 }
 
 
@@ -425,6 +425,7 @@ External sources
 
 .reg_resume_item {
     padding: 1%;
+    line-height: 2rem;
 }
 
 /* width */

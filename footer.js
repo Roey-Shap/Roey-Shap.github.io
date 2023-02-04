@@ -26,6 +26,13 @@ class Footer extends HTMLElement {
                     <img src="https://www.pinclipart.com/picdir/big/60-607147_summit-interconnect-delivers-high-reliability-rigid-linkedin-clipart.png" alt="" style="height: 2.5rem;">
                 </a>
                 
+                <div style="transform: scale(1)"><a class="reg_link footer_link" target="_blank"; rel="noopener noreferrer" href="https://github.com/Roey-Shap">
+                    <span style="background-color: white; display: inline-flex; justify-content: center; border-radius: 12px; margin-right: 0.5rem">
+                    <img src="./images/github.png" alt="" style="height: 2.5rem;">
+                    </span>
+                </a></div>
+                
+                
                  <div style="transform: scale(1)"><a class="reg_link footer_link" target="_blank"; rel="noopener noreferrer" href="https://roey-shap.itch.io/">
                     <span style="background-color: white; display: inline-flex; justify-content: center; border-radius: 12px;">
                     <img src="https://www.pinclipart.com/picdir/big/555-5557851_itch-io-logo-clipart.png" alt="" style="height: 2.5rem;">
@@ -36,7 +43,7 @@ class Footer extends HTMLElement {
                     <img src="https://www.pinclipart.com/picdir/big/532-5329276_play-icon-white-youtube-logo-png-clipart.png" alt="" style="height: 2.2rem; margin-right: -1rem;">
                 </a>
                 
-                <a class="reg_link footer_link" target="_blank"; rel="noopener noreferrer" href="https://twitter.com/EonLongNap">
+                <a stlye="padding-left: 2rem" class="reg_link footer_link" target="_blank"; rel="noopener noreferrer" href="https://twitter.com/EonLongNap">
                     <img src="https://www.pinclipart.com/picdir/big/578-5789236_logo-twitter-png-blanc-white-twitter-logo-transparent.png" alt="" style="height: 2.2rem;">
                 </a>
 
