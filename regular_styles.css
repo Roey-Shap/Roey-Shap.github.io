@@ -145,7 +145,7 @@ a {
 }
 
 .title_text {
-    margin: 5%;
+    margin: 3%;
     line-height: 2rem
 }
 
@@ -186,8 +186,9 @@ Containers
 .reg_container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
+    text-align: center;
 }
 
 .reg_grid_container {
@@ -223,10 +224,22 @@ everything to that it jumped a bit further down but elements kept decently simil
     width: 10%;
     height: 10%;
 
+    min-width: 200px;
+    min-height: 200px;
+
     position: relative;
 
     border-radius: 50%;
 }
+
+/*
+@media (max-width: 800px) {
+    .intro_pic {
+        width: 40%;
+        height: 40%;
+    }
+}
+ */
 
 .page_line_sep {
     border-style: inset;
