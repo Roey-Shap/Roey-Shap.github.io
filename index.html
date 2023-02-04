@@ -10,7 +10,6 @@ Reactive animation/interaction game/algorithm?
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Roey Shap</title>
     <link rel="icon" href="./images/tab-icon2.png">
@@ -43,44 +42,51 @@ Reactive animation/interaction game/algorithm?
     <br><br><br>
     <br><br><br>
 
-    <div class="reg_container" style="display: flex; flex-direction: row; justify-content: start;">
-        <h1 class="title_text" id="about_me">About Me</h1>
+    <div class="reg_container" style="display: flex; flex-direction: row; justify-content: center;">
+        <h1 class="title_text" id="about_me">Welcome!</h1>
         <img class="intro_pic" src="./images/self-picture.jfif"; alt="My face">
     </div>
-    <p class="intro_text">
-    Hi! I'm Roey Shapiro, a 2nd year Computer Science student at the IDC!
-    I enjoy making games, drawing, writing, and everything Japanese.
-    Hoping to be in a team of solid people one day.
-    <br><br>
-    Welcome to my website! Grab your beverage of choice and have a look around.
-    <img src="https://www.nicepng.com/png/full/66-668329_vector-cafe-travel-mug-cup-icon.png" alt=""
-         style="display: inline-block; height: 2.5rem; padding-left: 1%;">
-</p>
+    <div style="display: flex; flex-direction: row; justify-content: center; text-align: center">
+        <p class="intro_text">
+            Hi! I'm Roey Shapiro, a 3rd year Computer Science student at RU.
+            I enjoy making games, drawing, writing, and everything Japanese.
+            Hoping to be in a team of solid people one day.
+            <br><br>
+            Welcome to my website! Grab your beverage of choice and have a look around.
+        </p>
+    </div>
+    <div style="display: flex; flex-direction: row; justify-content: center;">
+        <img src="https://www.nicepng.com/png/full/66-668329_vector-cafe-travel-mug-cup-icon.png" alt=""
+             style="display: inline-block; height: 2.5rem; padding-left: 1%;">
+    </div>
     <br>
     <hr class="page_line_sep">
-    <br>
 
-    <div style="display: flex; flex-direction: row; justify-content: center; flex-flow: wrap; min-width: 30%;">
+    <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; flex: 1;">
+        <div class="main_page_grid_item">
+            <a href="game_dev.html" class="main_page_grid_text">
+                <p>Game Dev</p>
+            </a>
+        </div>
+
+        <div class="main_page_grid_item">
+            <a href="resume.html" class="main_page_grid_text">
+                <p>Resume</p>
+            </a>
+        </div>
+
+        <div class="main_page_grid_item">
+            <a href="writing.html" class="main_page_grid_text">
+                <p>Writing</p>
+            </a>
+        </div>
+
+
         <div class="main_page_grid_container">
-            <div class="main_page_grid_item">
-                <a href="game_dev.html" class="main_page_grid_text">
-                    <p>Game Development</p>
-                </a>
-            </div>
 
-            <div class="main_page_grid_item">
-                <a href="resume.html" class="main_page_grid_text">
-                    <p>Resume</p>
-                </a>
-            </div>
-
-            <div class="main_page_grid_item">
-                <a href="writing.html" class="main_page_grid_text">
-                    <p>Writing</p>
-                </a>
-            </div>
         </div>
     </div>
+    <br><br>
 
     <footer-comp></footer-comp>
 </div>

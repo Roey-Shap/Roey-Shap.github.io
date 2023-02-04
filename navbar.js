@@ -27,6 +27,7 @@ class Navbar extends HTMLElement {
         </script>
         -->
         <div class="navbar navbar_container">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <div style="max-width: 10%">
                 <a href="index.html" class="navbar_home">Home</a>
             </div>

@@ -150,9 +150,11 @@ a {
 }
 
 .intro_text {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
     line-height: 1.5rem;
     max-width: 60%;
-    padding-left: 2%;
     font-size: 115%;
 }
 
@@ -183,7 +185,6 @@ Containers
 
 .reg_container {
     display: flex;
-    max-width: 30%;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
@@ -219,8 +220,8 @@ everything to that it jumped a bit further down but elements kept decently simil
 
 
 .intro_pic {
-    width: 38%;
-    height: 38%;
+    width: 10%;
+    height: 10%;
 
     position: relative;
 
@@ -258,28 +259,39 @@ everything to that it jumped a bit further down but elements kept decently simil
 
 .main_page_grid_container {
 
-    display: inline-grid;
+/*    display: inline-grid;
 
-    grid-template-columns: 1fr 1fr 1fr;
+/*
+    grid-template-columns: 1fr;
     /* Two columns */
-    grid-template-rows: 1fr /* 1fr */;
+/*    grid-template-rows: 1fr 1fr 1fr;
     /* Two rows */
 
-    row-gap: 4%;
+/*    row-gap: 4%;*/
 }
 
+
+
 .main_page_grid_item {
+    /*
     justify-self: center;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 
-    min-width: 50%;
+    min-width: 30%;
     /*
     border-radius: 10px;
     background-color: rgba(50, 50, 50, 0.1);
     */
 
     font-size: 200%;
+    height: min-content;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+    margin-bottom: 1vh;
+
 }
 
 .main_page_grid_text, .main_page_grid_text.visited {
