@@ -224,8 +224,8 @@ everything to that it jumped a bit further down but elements kept decently simil
     width: 10%;
     height: 10%;
 
-    min-width: 175px;
-    min-height: 175px;
+    min-width: 125px;
+    min-height: 125px;
 
     position: relative;
 
@@ -381,6 +381,7 @@ External sources
     border-width: 0.3vh;
     border-color: black;
     border-radius: 2vh;
+
 }
 
 
@@ -398,7 +399,6 @@ External sources
 
     font-size: 2.5vh;
 }
-
 .itch_thumb_custom_title {
     margin-top: -0.5vh;
     margin-bottom: 2vh;
@@ -407,9 +407,14 @@ External sources
     word-wrap: break-word;
 
     text-align: center;
+    display: inline-block;
+    vertical-align: text-bottom;
+    line-height: 2rem;
+
 
     font-size: 4vh;
 }
+
 
 
 .resume_items_container {
