@@ -567,7 +567,13 @@ External sources
     max-width: 60%;
     max-height: 60%;
 
-    border-radius: 1rem;
+}
+
+.melt_poem_top {
+    border-radius: 0.5rem 0.5rem / 0.5rem 0.5rem 0 0
+}
+.melt_poem_bottom {
+    border-radius: 0.5rem 0.5rem / 0 0 0.5rem 0.5rem
 }
 
 @media only screen and (max-device-width: 800px){
