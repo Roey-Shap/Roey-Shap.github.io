@@ -144,6 +144,12 @@ a {
     line-height: 1rem;
 }
 
+@media only screen and (max-device-width: 800px){
+    .reg_text {
+        font-size: 95%;
+    }
+}
+
 .title_text {
     margin: 2%;
     line-height: 2rem
@@ -154,8 +160,14 @@ a {
     flex-direction: row;
     justify-content: center;
     line-height: 1.5rem;
-    max-width: 60%;
+    max-width: 65%;
     font-size: 115%;
+}
+
+@media only screen and (max-device-width: 800px){
+    .intro_text {
+        font-size: 100%;
+    }
 }
 
 .reg_ul_list {

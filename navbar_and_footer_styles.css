@@ -93,10 +93,11 @@ Navbar
 
 .drop_button {
     font-family: 'Baloo 2';
-    font-size: 1.75rem;
+    font-size: 1.65rem;
     position: relative;
 
     padding-top: 1.5rem;
+    padding-right: 1rem;
     padding-bottom: 0.5rem;
 
     background-color: #6767e0;
@@ -107,6 +108,12 @@ Navbar
     cursor: pointer;
 }
 
+@media only screen and (max-device-width: 800px){
+    .drop_button {
+        padding-top: 1.6rem;
+        padding-right: -0.5rem;
+    }
+}
 
 
 /*
@@ -122,6 +129,8 @@ dropdown
         display: block;
     }
 }
+
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -133,6 +142,11 @@ dropdown
     z-index: 1;
 }
 
+@media only screen and (max-device-width: 800px){
+    .dropdown-content {
+        padding-right: -0.5rem;
+    }
+}
 
 /*
 Footer
@@ -152,6 +166,13 @@ Footer
     color: white;
 
     z-index: 100;
+}
+
+@media only screen {
+    .reg_footer {
+        transform: scale(1, 0.5);
+        transform-origin: bottom;
+    }
 }
 
 .reg_footer_contents {
