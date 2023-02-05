@@ -144,7 +144,8 @@ dropdown
 
 @media only screen and (max-device-width: 800px){
     .dropdown-content {
-        padding-right: -0.5rem;
+        padding-top: 0.2rem;
+        padding-right: -0.6rem;
     }
 }
 
