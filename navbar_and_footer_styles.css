@@ -168,12 +168,13 @@ Footer
     z-index: 100;
 }
 
+/*
 @media only screen {
     .reg_footer {
         transform: scale(1, 0.5);
         transform-origin: bottom;
     }
-}
+}*/
 
 .reg_footer_contents {
     display: flex;
