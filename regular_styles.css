@@ -464,6 +464,8 @@ External sources
     height: 75vh;
     margin: auto;
 
+    max-width: 90%;
+
     text-align: center;
 
 
@@ -528,4 +530,13 @@ External sources
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
     opacity: 1;
+}
+
+
+.melt_poem_img {
+
+    max-width: 60%;
+    max-height: 60%;
+
+    border-radius: 1rem;
 }
