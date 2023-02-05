@@ -322,7 +322,13 @@ everything to that it jumped a bit further down but elements kept decently simil
     padding-top: 0vh;
     padding-bottom: 0vh;
     margin-bottom: 1vh;
+}
 
+@media only screen and (max-device-width: 800px) {
+    .main_page_grid_item {
+        margin-bottom: -1rem;
+        margin-top: -1rem;
+    }
 }
 
 .main_page_grid_text, .main_page_grid_text.visited {
