@@ -164,11 +164,11 @@ Footer
 }
 
 .footer_link {
-    padding-left: 1%;
-    padding-right: 1%;
-    justify-self: center;
-    align-self: center;
+    display: inline-block;
+    justify-content: center;
+    padding: 0.35rem;
 }
+
 
 
 
@@ -187,7 +187,6 @@ Footer
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px;
     position: absolute;
     z-index: 1;
     bottom: 150%;
@@ -195,6 +194,10 @@ Footer
     margin-left: -75px;
     opacity: 0;
     transition: opacity 0.3s;
+}
+
+.tooltiptext {
+    padding: 5px;
 }
 
 .tooltip .tooltiptext::after {

@@ -10,9 +10,10 @@ class Footer extends HTMLElement {
 
                  
          <div id="footer" class="reg_footer">
-            <div class="reg_footer_contents">                 
+            <div class="reg_footer_contents">    
+                         
                  <div class="tooltip">
-                    <input class="reg_link" type="image" onclick="copyToClipboard('roeyshapiro15@gmail.com', 'tooltiptextEmail')" 
+                    <input class="reg_link footer_link" type="image" onclick="copyToClipboard('roeyshapiro15@gmail.com', 'tooltiptextEmail')" 
                         onmousein="hoveringOverCopy()" 
                         src="https://www.pinclipart.com/picdir/big/537-5373668_triangle-area-symbol-png-clipart-email-icon-png.png" 
                         alt="" 
@@ -27,7 +28,7 @@ class Footer extends HTMLElement {
                 </a>
                 
                 <div style="transform: scale(1)"><a class="reg_link footer_link" target="_blank"; rel="noopener noreferrer" href="https://github.com/Roey-Shap">
-                    <span style="background-color: white; display: inline-flex; justify-content: center; border-radius: 12px; margin-right: 0.5rem">
+                    <span style="background-color: white; display: inline-flex; justify-content: center; border-radius: 12px;">
                     <img src="./images/github.png" alt="" style="height: 2.5rem;">
                     </span>
                 </a></div>
@@ -40,15 +41,15 @@ class Footer extends HTMLElement {
                 </a></div>
                 
                  <a class="reg_link footer_link" target="_blank"; rel="noopener noreferrer" href="https://www.youtube.com/channel/UCuC1wO6LqpdD7p_opPHgkpA" >
-                    <img src="https://www.pinclipart.com/picdir/big/532-5329276_play-icon-white-youtube-logo-png-clipart.png" alt="" style="height: 2.2rem; margin-right: -1rem;">
+                    <img src="https://www.pinclipart.com/picdir/big/532-5329276_play-icon-white-youtube-logo-png-clipart.png" alt="" style="height: 2.2rem;">
                 </a>
                 
-                <a stlye="padding-left: 2rem" class="reg_link footer_link" target="_blank"; rel="noopener noreferrer" href="https://twitter.com/EonLongNap">
+                <a stlye="" class="reg_link footer_link" target="_blank"; rel="noopener noreferrer" href="https://twitter.com/EonLongNap">
                     <img src="https://www.pinclipart.com/picdir/big/578-5789236_logo-twitter-png-blanc-white-twitter-logo-transparent.png" alt="" style="height: 2.2rem;">
                 </a>
 
                 <div class="tooltip">
-                    <input class="reg_link" type="image" onclick="copyToClipboard('Shap#4869', 'tooltiptextDiscord')" onmousein="hoveringOverCopy()" src="./images/discord.png" alt="" style="height: 2.7rem;">
+                    <input class="reg_link footer_link" type="image" onclick="copyToClipboard('Shap#4869', 'tooltiptextDiscord')" onmousein="hoveringOverCopy()" src="./images/discord.png" alt="" style="height: 2.7rem;">
                         <div class="tooltiptext" id="tooltiptextDiscord">Copy Shap#4869 to clipboard</div>
                     </input>
                 </div>
