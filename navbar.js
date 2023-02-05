@@ -54,7 +54,7 @@ class Navbar extends HTMLElement {
                     <p><a class="reg_link navbar_link" href="projects.html">Projects</a></p>
                     <p><a class="reg_link navbar_link" href="resume.html">Resume</a></p>
                     <p><a class="reg_link navbar_link" href="writing.html">Writing</a></p>
-                    <p><a class="reg_link navbar_link" href="contact.html" class="reg_link">Contact</a></p>
+                    <p><a class="reg_link navbar_link" href="contact.html">Contact</a></p>
                   </div>
                 </div>
                         <!--<form action="contact.html" class="dropdown">
