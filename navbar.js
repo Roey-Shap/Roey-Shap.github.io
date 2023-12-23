@@ -42,18 +42,20 @@ class Navbar extends HTMLElement {
             </div>
             <div class="navbar_link_container">
                 <div class="navbar_regular_links">            
-                    <p><a class="reg_link navbar_link" href="projects.html">Projects</a></p>
+                    <p><a class="reg_link navbar_link" href="programming.html">Projects</a></p>
                     <p><a class="reg_link navbar_link" href="resume.html">Resume</a></p>
                     <p><a class="reg_link navbar_link" href="writing.html">Writing</a></p>
+                    <p><a class="reg_link navbar_link" href="animation.html">Animation</a></p>
                     <p><a class="reg_link navbar_link" href="contact.html" class="reg_link">Contact</a></p>
                 </div>
                 
                 <div class="dropdown">
                   <button class="drop_button">Menu</button>
                   <div class="dropdown-content">
-                    <p><a class="reg_link navbar_link" href="projects.html">Projects</a></p>
+                    <p><a class="reg_link navbar_link" href="programming.html">Projects</a></p>
                     <p><a class="reg_link navbar_link" href="resume.html">Resume</a></p>
                     <p><a class="reg_link navbar_link" href="writing.html">Writing</a></p>
+                    <p><a class="reg_link navbar_link" href="animation.html">Animation</a></p>
                     <p><a class="reg_link navbar_link" href="contact.html">Contact</a></p>
                   </div>
                 </div>

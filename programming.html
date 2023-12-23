@@ -21,8 +21,10 @@ Reactive animation/interaction game/algorithm?
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2:wght@600&display=swap');
-    </style>
+    </style>\
 
+    <script src="./ShaderToyLite.js"></script>
+    <script src="./previewShader.js"></script>
     <script src="navbar.js" type="text/javascript" defer></script>
     <script src="footer.js" type="text/javascript" defer></script>
     <script src="external_functions.js" type="text/javascript"></script>
@@ -30,27 +32,19 @@ Reactive animation/interaction game/algorithm?
 <body>
 <navbar-comp></navbar-comp>
 
-<!--
-<div class="background_hack">
-    <div class="base_background"></div>
-    <div class="tiled_background"></div>
-</div> -->
-
-
 <div class="reg_text main_container">
 
     <br><br><br>
     <br><br><br>
 
     <div class="reg_container" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;">
-        <h1 class="title_text" id="about_me">Programming</h1>
+        <h1 class="title_text" id="about_me">Programming and Game Development</h1>
     </div>
     <div style="display: flex; flex-direction: row; justify-content: center; text-align: center">
         <p class="intro_text">
-            I have an interest in machine learning and graphics.
+            I have an interest in graphics and machine learning.
             <br>
-            Somehow, though, I don't think pushing machine learning to its limits is the healthy way forward.
-            I'd like to make tools that leave space for us to create.
+            I also love making weird games. Check them out below!
         </p>
     </div>
     <hr class="page_line_sep">
@@ -67,11 +61,80 @@ Reactive animation/interaction game/algorithm?
             <div class="itch_thumb_custom_desc">Interpolate between any two fonts.</div>
         </div>
 
+        <div class="itch_thumb_custom">
+            <a href="https://www.shadertoy.com/user/roey_shap" target="_blank"; rel="noopener noreferrer" class="itch_thumb_custom_title reg_link" style="color: black; text-decoration: underline"><strong>Shadertoy</strong></a>
+            <a href="https://www.shadertoy.com/user/roey_shap" target="_blank"; rel="noopener noreferrer" >
+                <canvas id="cTest" class="itch_thumb_custom_pic" width="200" height="200"></canvas>
+                <script>
+                    let image = previewShader;
+                    let toy = new ShaderToyLite('cTest');
+                    toy.setImage({source: image});
+                    toy.play();
+                </script>
+            </a>
+            <div class="itch_thumb_custom_desc">Shadertoy Profile</div>
+        </div>
+
         <div class="main_page_grid_container">
 
         </div>
     </div>
-    <br><br>
+
+
+    <div class="reg_container">
+        <h1 class="title_text" id="title">Game Development</h1>
+        <!-- <img class="intro_pic" src="./images/tab-icon.png"; alt="My face"> -->
+    </div>
+
+    <div style="justify-content: center; align-text: center; margin-left: 3%; line-height: 1.5rem; max-width: 75%; font-size: 115%;">
+        <p style="align-text: center">
+            Here are some of my games. Hoping to get more time to dev in the future!
+            I'm most experienced in <strong>GameMakerStudio</strong> and have worked with some <strong>GLSL</strong>,
+            but I can also use <strong>Unity</strong> and <strong>C#</strong>.
+            <br>
+            <br>
+
+            <span><strong>
+            <a class="reg_link" target="_blank"; rel="noopener noreferrer" href="https://roey-shap.itch.io/" style="color: black; font-size: 100%; text-decoration: underline;">
+                Click here for my Itch.io page and the rest of my games!
+            </a>
+        </strong></span>
+        </p>
+    </div>
+    <br>
+    <hr class="page_line_sep">
+    <br>
+    <h2 id="personal_projects" class="offset_anchor" style="padding-left: 2vh;">Interesting Projects</h2>
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap; flex: 1;">
+        <div class="itch_thumb_custom">
+            <a href="https://roey-shap.itch.io/snecca" target="_blank"; rel="noopener noreferrer" class="itch_thumb_custom_title reg_link" style="color: black; text-decoration: underline"><strong>Snecca</strong></a>
+            <a href="https://roey-shap.itch.io/snecca" target="_blank"; rel="noopener noreferrer" ><img class="itch_thumb_custom_pic" src="https://img.itch.zone/aW1nLzU1Mzg3NDYucG5n/original/GSUTFB.png" alt="Snecca image"></a>
+            <div class="itch_thumb_custom_desc">A top-down Snake-like puzzle game where you <strong>have</strong> to bite your tail to proceed.</div>
+        </div>
+
+        <div class="itch_thumb_custom">
+            <a href="https://roey-shap.itch.io/riskisr-post-jam" target="_blank"; rel="noopener noreferrer" class="itch_thumb_custom_title reg_link" style="color: black; text-decoration: underline"><strong>RISKISR</strong></a>
+            <a href="https://roey-shap.itch.io/riskisr-post-jam" target="_blank"; rel="noopener noreferrer" ><img class="itch_thumb_custom_pic" src="https://img.itch.zone/aW1nLzc0Mjc1MzEucG5n/original/aLyqeI.png" alt="RISKISR image"></a>
+            <div class="itch_thumb_custom_desc">An arcade twin-stick where every action you take is really risky. </div>
+        </div>
+
+        <div class="itch_thumb_custom">
+            <a href="https://roey-shap.itch.io/ace" target="_blank"; rel="noopener noreferrer" class="itch_thumb_custom_title reg_link" style="color: black; text-decoration: underline"><strong>ACE</strong></a>
+            <a href="https://roey-shap.itch.io/ace" target="_blank"; rel="noopener noreferrer" ><img class="itch_thumb_custom_pic" src="./images/ACE_cover.png" alt="ACE image"></a>
+            <div class="itch_thumb_custom_desc">An 2019 experiment where I tried to fuse a card game and a platform fighter.</div>
+        </div>
+
+    </div>
+
+
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap; flex: 1;">
+        <div class="itch_thumb_custom">
+            <a href="https://roey-shap.itch.io/ace" target="_blank"; rel="noopener noreferrer" class="itch_thumb_custom_title reg_link" style="color: black; text-decoration: underline"><strong>The Watch</strong></a>
+            <iframe frameborder="0" src="https://itch.io/embed-upload/9211791?color=28511c" allowfullscreen="" width="300" height="300"><a href="https://roey-shap.itch.io/the-watch">Play The Watch on itch.io</a></iframe>
+            <div class="itch_thumb_custom_desc">A weird game about one of those old calculator watches.</div>
+        </div>
+    </div>
+
 
     <footer-comp></footer-comp>
 </div>
